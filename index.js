@@ -29,7 +29,7 @@ function nearestPowerOfTwo(num)
     let multiplier1 = 2
     let beforeNum = 0;
     let afterNum = 0;
-    // let pwr = 0;
+    let pwr = 0n;
     for(let index = 0; index <= num; ++index)
     {
         result1 = multiplier1 ** index;
@@ -39,28 +39,34 @@ function nearestPowerOfTwo(num)
             afterNum = result1 * 2;
             if((num - beforeNum) <= (afterNum - num))
             {
-                
-                //console.log(beforeNum);
+                pwr = beforeNum;
             }
-            else{
-                console.log(afterNum);
-            }
-            break;   
-        }
-        else if (result1 > num)
-        {
-            // console.log(result1);
-            beforeNum = result1 / 2;
-            
-            if((num - beforeNum) <= (result1 - num))
+            else
             {
-                console.log(beforeNum);
-            }
-            else{
-                console.log(result1);
+                pwr = afterNum;
             }
             break;
         }
+        else if (result1 > num)
+        {
+            beforeNum = result1 / 2;
+            if((num - beforeNum) <= (result1 - num))
+            {
+                pwr = beforeNum;
+            }
+            else
+            {
+                pwr = result1;
+            }
+            break;
+        }
+
     }
+    return(pwr);
 }
-console.log(nearestPowerOfTwo());
+
+for (let index = 2; index <= 20  ; index++) {
+    console.log('index is ' + index + ' nearest power is ' + nearestPowerOfTwo(index));
+}
+
+// console.log(5);
