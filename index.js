@@ -38,8 +38,8 @@ function nearestPowerOfTwo(num)
     for(let index = 0; index <= num; ++index)
     {
         result1 = multiplier1 ** index;
-         beforeNum = result1 / 2;
-            afterNum = result1 * 2;
+        beforeNum = result1 / 2;
+        afterNum = result1 * 2;
         if (result1 === num)
         {
             if((num - beforeNum) <= (afterNum - num)){
