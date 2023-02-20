@@ -66,13 +66,13 @@
     * ```4 >> 1;``` output 2.
 
 ### Answer_4
-- [x] ```CODE:\
-for(let i = 1; i < 20; i += 7) 
-{ 
-    console.log(i); 
-} 
+- [x] CODE:\
+```for(let i = 1; i < 20; i += 7)\
+{\
+    console.log(i);\
+}\
 
-OUTPUT:
-1
-8
+OUTPUT:\
+1\
+8\
 15```
