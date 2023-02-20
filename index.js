@@ -18,8 +18,35 @@ Using if…else conditional statement, write a program that will help Bolatito
 //     console.log(i);
 // }
 
+// Answer to question 3.
+function subjectToTake (classGroup)
+{
+    //classGroupWrapper = String(classGroup);
+    let studentSubjects
+    let newLine = '\n';
+    let artsSubjects = `Government${newLine}Economics${newLine}Literature${newLine}History`;
+    let socialScienceSubjects = `Accounting${newLine}Commerce${newLine}Marketing${newLine}Geography`;
+    let scienceSubjects = `Physics${newLine}Chemistry${newLine}Biology${newLine}Technical Drawing`; 
+    let generalSubjects = `English${newLine}Mathematics`;
+
+    if("art" === classGroup || classGroup === "Art" || classGroup === "ART" ){
+        studentSubjects = artsSubjects + generalSubjects;
+    }
+    else if(classGroup === "social science" || classGroup === "Social science" || classGroup === "Social Science" || classGroup === "SOCIAL SCIENCE"){
+        studentSubjects = socialScienceSubjects + generalSubjects;
+    }
+    else if(classGroup === "science" ||  classGroup === "Science" || classGroup === "SCIENCE"){
+        studentSubjects = scienceSubjects + generalSubjects;
+    }
+    else{
+        studentSubjects = generalSubjects;
+    }
+    return(`Here are the subjects you will be taking:${newLine + studentSubjects}`);
+}
+console.log(subjectToTake('SCIENCE'));
+
 // Answer to question 5.
-function nearestPowerOfTwo(num)
+/*function nearestPowerOfTwo(num)
 {
     let result1 = 0n;
     let multiplier1 = 2
@@ -49,7 +76,7 @@ function nearestPowerOfTwo(num)
         }
     }
     return(pwr);
-}
+}*/
 
 
 
