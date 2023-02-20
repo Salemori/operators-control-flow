@@ -67,12 +67,13 @@
 
 ### Answer_4
 - [x] CODE:
-* ```for(let i = 1; i < 20; i += 7)
-{
+```
+for (let i = 1; i < 20; i += 7) {
     console.log(i);
 }
 
 OUTPUT:
 1
 8
-15```
+15
+```
