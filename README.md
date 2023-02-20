@@ -1,7 +1,7 @@
 ## Javascript Operators & Control Flow
 
 ### Answer_1
--[x] JavaScript operators symbols
+- [x] JavaScript operators symbols
 * Arithmetic Operators:
     * ```+``` Addition
     * ```-``` Subtraction
@@ -13,8 +13,8 @@
     * ```--``` Decrement
 
 * Assignment Operators:
-    * Assignmet operator: ```=``` 
-    * Arithmetic Assignment Operator:     
+    * Assignmet Operator: ```=``` 
+    * Arithmetic Assignment Operator:
     ```+=``` ```-=``` ```*=``` ```/=``` ```%=``` ```**=```
     * Logical Assignment Operators:
     ```&&=``` ```||=``` ```??=```
@@ -48,16 +48,16 @@
     * ```>>>``` Zero fill right shift
 
 ### Answer_2
--[x] Examples of:
+- [x] Examples of JavaScript Operators:
 * Arithmetic Operators:
-    ```14 / 7;``` result is 2.
-    ```19 % 2;``` result is 1.
+    * ```14 / 7;``` output 2.
+    * ```19 % 2;``` output 1.
 * Assignment Operators: 
     * ```age = 15;``` variable age is assigned the value 15.
-    * ```age *= 2;``` evaluates to 30 as age is assigned the value 15 above.
+    * ```age *= 2;``` output 30 as age is assigned the value 15 above.
 * Comparison Operators: 
-    * ```2 <= 8;``` evaluates to true.
-    * ```10 > 20;``` evaluates to false.
+    * ```2 <= 8;``` output true.
+    * ```10 > 20;``` output false.
 *  Logical Operators:
     * ```10 >= 9 && 4 === 4;``` output true.
     * ```"3" === 3 || 20 <= 15;``` output false.
@@ -66,12 +66,13 @@
     * ```4 >> 1;``` output 2.
 
 ### Answer_4
--[x] Code:
-```for(let i = 1; i < 20; i += 7) /
-{ /
-    console.log(i); /
-}``` 
-- Output:
-```1```
-```8``
-```15```
+- [x] ```CODE:\
+for(let i = 1; i < 20; i += 7) 
+{ 
+    console.log(i); 
+} 
+
+OUTPUT:
+1
+8
+15```
