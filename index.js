@@ -1,41 +1,21 @@
-// Answer to question 3
-/*Bolatito just got admitted to Greenfield High School as an Arts student. To commence her studies,
- she needs to know the subjects she will be taking as an Arts student.
- All students have to take the General subjects.
-	The subjects for each class group are as follows:
-	Science Subjects - Physics, Chemistry, Biology, Technical Drawing 
-Social Science Subjects - Accounting, Commerce, Marketing, Geography
-Arts Subjects - Government, Economics, Literature, History
-General Subjects - English, Mathematics
-
-Using if…else conditional statement, write a program that will help Bolatito
- determine the subjects she will be taking for the session using her class group. 
- Also, in the case of an invalid class group, your output should be the General subjects. 
-*/
-// // Answer to question 4
-// for(let i = 1; i < 20; i += 7)
-// {
-//     console.log(i);
-// }
-
 // Answer to question 3.
-function subjectToTake (classGroup)
+
+function subjectToTake(classGroup)
 {
-    //classGroupWrapper = String(classGroup);
     let studentSubjects
     let newLine = '\n';
-    let artsSubjects = `Government${newLine}Economics${newLine}Literature${newLine}History`;
-    let socialScienceSubjects = `Accounting${newLine}Commerce${newLine}Marketing${newLine}Geography`;
-    let scienceSubjects = `Physics${newLine}Chemistry${newLine}Biology${newLine}Technical Drawing`; 
+    let artsSubjects = `Government${newLine}Economics${newLine}Literature${newLine}History${newLine}`;
+    let socialScienceSubjects = `Accounting${newLine}Commerce${newLine}Marketing${newLine}Geography${newLine}`;
+    let scienceSubjects = `Physics${newLine}Chemistry${newLine}Biology${newLine}Technical Drawing${newLine}`; 
     let generalSubjects = `English${newLine}Mathematics`;
 
-    if("art" === classGroup || classGroup === "Art" || classGroup === "ART" ){
+    if(classGroup === "art" || classGroup === "Art" || classGroup === "ART" ){
         studentSubjects = artsSubjects + generalSubjects;
     }
     else if(classGroup === "social science" || classGroup === "Social science" || classGroup === "Social Science" || classGroup === "SOCIAL SCIENCE"){
         studentSubjects = socialScienceSubjects + generalSubjects;
     }
-    else if(classGroup === "science" ||  classGroup === "Science" || classGroup === "SCIENCE"){
+    else if(classGroup == "science" ||  classGroup === "Science" || classGroup == "SCIENCE"){
         studentSubjects = scienceSubjects + generalSubjects;
     }
     else{
@@ -43,10 +23,12 @@ function subjectToTake (classGroup)
     }
     return(`Here are the subjects you will be taking:${newLine + studentSubjects}`);
 }
-console.log(subjectToTake('SCIENCE'));
 
-// Answer to question 5.
-/*function nearestPowerOfTwo(num)
+console.log(subjectToTake("Social science"));
+
+
+// Answer to question 5.        
+function nearestPowerOfTwo(num)
 {
     let result1 = 0n;
     let multiplier1 = 2
@@ -60,31 +42,38 @@ console.log(subjectToTake('SCIENCE'));
             afterNum = result1 * 2;
         if (result1 === num)
         {
-            if((num - beforeNum) <= (afterNum - num))
+            if((num - beforeNum) <= (afterNum - num)){
                 pwr = beforeNum;
-            else
+            }
+            else{
                 pwr = afterNum;
+            }
             break;
         }
         else if (result1 > num)
         {
-            if((num - beforeNum) <= (result1 - num))
+            if((num - beforeNum) <= (result1 - num)){
                 pwr = beforeNum;
-            else
+            }
+            else{
                 pwr = result1;
+            }
             break;
         }
     }
     return(pwr);
-}*/
+}
 
+console.log(nearestPowerOfTwo(40));
+console.log(nearestPowerOfTwo(50));
+console.log(nearestPowerOfTwo(3));
 
 
 // test code
-// for (let index = 2; index <= 20  ; index++) {
+// for (let index = 10; index <= 20; index++) {
 //     console.log('index is ' + index + ' nearest power is ' + nearestPowerOfTwo(index));
 // }
-
+//Wrough work.
 /*function isPowerOfTwo(num1)
 {
     let multiplier = 2;
